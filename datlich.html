@@ -87,7 +87,7 @@
     <!-- css -->
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/reset.css" />
-    <title>RiuBarber</title>
+    <title>RiuBarber- Đặt Lịch</title>
   </head>
   <body>
     <header class="header">
@@ -112,15 +112,17 @@
           <nav class="navbar">
             <ul class="navbar__list">
               <li class="navbar__item">
-                <a href="./index.html" class="navbar__link navbar__link--active"
-                  >Trang Chủ</a
-                >
+                <a href="./index.html" class="navbar__link">Trang Chủ</a>
               </li>
               <li class="navbar__item">
                 <a href="" class="navbar__link">Giới thiệu</a>
               </li>
               <li class="navbar__item">
-                <a href="./datlich.html" class="navbar__link">Đặt lịch</a>
+                <a
+                  href="./datlich.html"
+                  class="navbar__link navbar__link--active"
+                  >Đặt lịch</a
+                >
               </li>
               <li class="navbar__item">
                 <a href="" class="navbar__link">Liên hệ</a>
@@ -128,97 +130,44 @@
             </ul>
           </nav>
         </div>
-        <section class="hero">
-          <!-- hero left -->
-          <section class="hero__content">
-            <h1 class="hero__heading">
-              RIU Barber shop - Chất lượng đẳng cấp, phong cách cá tính!
-            </h1>
-            <p class="hero__desc">
-              Bạn đang tìm kiếm một nơi tin cậy để thay đổi diện mạo? Hãy đến
-              với Riu, nơi hội tụ tinh hoa văn hóa nhân loại.
-            </p>
-            <div class="hero__row">
-              <a href="./datlich.html" class="btn">Đặt lịch</a>
-              <span class="hero__phone">hoặc gọi ngay 091-111-3332</span>
+        <!-- Booking -->
+        <div class="booking">
+          <form action="" class="booking__form">
+            <h1 class="booking__heading">Đặt lịch ngay</h1>
+            <div class="booking__group">
+              <input
+                type="text"
+                class="booking__group-input"
+                placeholder="Họ và tên"
+              />
             </div>
-          </section>
-
-          <!-- hero right -->
-          <div class="hero__media">
-            <figure class="hero__images">
-              <img
-                src="./assets/img/b1.jpg"
-                alt=""
-                class="hero__img hero__img-larger"
+            <div class="booking__group">
+              <input
+                type="number"
+                class="booking__group-input"
+                placeholder="Số Điện Thoại"
               />
-              <img
-                src="./assets/img/b2.jpg"
-                alt=""
-                class="hero__img hero__img-small"
+            </div>
+            <div class="booking__group">
+              <input
+                type="time"
+                class="booking__group-input"
+                placeholder="Giờ"
               />
-            </figure>
-          </div>
-        </section>
+            </div>
+            <div class="booking__group">
+              <input
+                type="date"
+                class="booking__group-input"
+                placeholder="Số Điện Thoại"
+              />
+            </div>
+            <input type="submit" class="booking__submit" value="Đặt ngay" />
+          </form>
+        </div>
       </div>
     </header>
     <main>
-      <section class="service">
-        <div class="container">
-          <h2 class="service__heading section-heading">Dịch vụ</h2>
-          <p class="service__desc section-desc">
-            Mang đến những kiểu tóc hiện đại, phù hợp với mọi phong cách
-          </p>
-          <div class="service__row">
-            <!-- service trai -->
-            <figure>
-              <img src="./assets/img/b4.jpg" alt="" class="service__img" />
-            </figure>
-            <!-- service phai -->
-            <div class="service__list">
-              <!-- item1 -->
-              <section class="service-item">
-                <div class="service-item__icon">
-                  <img src="./assets/img/white-star.svg" alt="hi" />
-                </div>
-                <div class="service-item__body">
-                  <div class="service-item__heading">Cắt tóc</div>
-                  <div class="service-item__desc">
-                    Mang đến những kiểu tóc hiện đại, phù hợp với mọi phong cách
-                  </div>
-                </div>
-              </section>
-              <!-- item2 -->
-              <section class="service-item">
-                <div class="service-item__icon">
-                  <img src="./assets/img/white-star.svg" alt="hi" />
-                </div>
-                <div class="service-item__body">
-                  <div class="service-item__heading">Uốn tóc</div>
-                  <div class="service-item__desc">
-                    Bạn chỉ cần ý tưởng , chúng tôi sẽ biến nó thành hiện thực.
-                  </div>
-                </div>
-              </section>
-              <!-- item3 -->
-              <section class="service-item">
-                <div class="service-item__icon">
-                  <img src="./assets/img/white-star.svg" alt="hi" />
-                </div>
-                <div class="service-item__body">
-                  <div class="service-item__heading">
-                    Cạo mặt & Chăm sóc râu
-                  </div>
-                  <div class="service-item__desc">
-                    Thư giản với dịch vụ cạo mặt tinh tế và chăm sóc râu hoàn
-                    hảo.
-                  </div>
-                </div>
-              </section>
-            </div>
-          </div>
-        </div>
-      </section>
       <section class="appointment">
         <div class="container">
           <div class="appointment__inner">

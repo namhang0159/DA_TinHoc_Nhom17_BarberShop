@@ -45,9 +45,15 @@ a {
   background: var(--header-color);
   min-height: 100vh;
 }
+.header-top.fixed {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
 .header-top {
   display: flex;
   justify-content: space-between;
+  background: var(--header-color);
 }
 .box__logo {
   display: flex;
@@ -114,6 +120,9 @@ a {
   font-weight: 400;
   text-align: center;
   border-radius: 999px;
+}
+.btn:hover {
+  opacity: 0.7;
 }
 .hero__heading {
   color: black;
@@ -242,4 +251,117 @@ a {
 }
 .appointment__btn {
   margin-top: 38px;
+}
+/* =====================footer================= */
+.footer {
+  margin-top: 170px;
+  padding-top: 100px;
+  background: var(--header-color);
+}
+.footer__top {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  column-gap: 78px;
+  margin-bottom: 30px;
+}
+.footer__desc {
+  margin-top: 21px;
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.75;
+}
+.footer__heading {
+  color: black;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.75;
+}
+.footer__list {
+  margin: 20px 0 28px;
+}
+.footer__desc-logo {
+  margin-left: 24px;
+  margin-bottom: 20px;
+}
+.footer__social {
+  display: flex;
+  margin-top: 20px;
+  column-gap: 10px;
+}
+.footer__social-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.footer__icon-fix {
+  width: 42px;
+  height: 42px;
+}
+.footer__copyright {
+  border-top: 1px solid black;
+}
+.footer__copyright-text {
+  color: black;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.86;
+  padding: 28px 0 42px;
+}
+/* =====================booking==================== */
+.booking {
+  justify-content: center;
+  display: flex;
+}
+.booking__form {
+  width: 400px;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 30px 30px 40px;
+  box-shadow: rgba(255, 255, 255, 0.1);
+  margin-top: 30px;
+}
+.booking__heading {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 20px;
+}
+.booking__group-input {
+  background: transparent;
+  border: 0;
+  outline: 0;
+  color: black;
+  width: 100%;
+  height: 35px;
+  flex-grow: 1;
+}
+.booking__group-input::placeholder {
+  font-size: 15px;
+}
+.booking__group {
+  margin-top: 20px;
+  width: 100%;
+  height: 40px;
+  border-bottom: 1px solid #10375c;
+}
+.booking__submit {
+  background: transparent;
+  border: 1px solid black;
+  color: black;
+  width: 100%;
+  margin-top: 25px;
+  padding: 5px 10px;
+}
+.booking__submit:hover {
+  background: yellow;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inter-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
